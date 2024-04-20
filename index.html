@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('enzosorvete.jpeg');
+            background-repeat: no-repeat;
+            background-size: 1900px 1100px;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #buttons {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bo namokk</h1>
+
+    <div id="buttons">
+        <button onclick="myFunctionYes()">Sim</button>
+        <button onclick="myFunctionNo()">Não</button>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunctionYes() {
+      document.getElementById("demo").innerHTML = "Melhor escolha";
+    }
+
+    function myFunctionNo() {
+      document.getElementById("demo").innerHTML = "Não gostei";
+    }
+    </script>
+
+</body>
+</html>
